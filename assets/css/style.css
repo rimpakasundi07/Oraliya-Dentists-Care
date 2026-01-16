@@ -28,3 +28,11 @@
   max-height: 400px;
   opacity: 1;
 }
+
+/* blog */
+/* 2. Blue Breadcrumb Box (নিচের নীল বক্স যার ডান দিক বাঁকা) */
+.breadcrumb-box {
+  background-color: #0465CB;
+  /* Dark Blue */
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}

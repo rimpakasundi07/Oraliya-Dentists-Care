@@ -18,7 +18,7 @@
     </style>
 </head>
 
-<body class="bg-gray-50 h-[200vh]">
+<body class="bg-gray-50">
 
     <header id="main-header" class="fixed w-full top-0 left-0 z-50 transition-all duration-300 bg-white">
 
@@ -90,41 +90,48 @@
         </div>
     </header>
 
+    <section
+        class="relative border-t-4 border-red-500 mt-24 w-full h-[250px] md:h-[300px] lg:h-[400px] flex items-center overflow-hidden">
+
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop"
+                alt="Dental Care" class="w-full h-full object-cover object-center" />
+
+            <div class="absolute inset-0 bg-blue-900/30"></div>
+        </div>
+
+        <div class="banner-left-shape hidden md:block"></div>
+
+        <div class="container mx-auto px-6 relative z-10 h-full flex flex-col justify-center">
+
+            <div class="max-w-lg ml-0 md:ml-12 mt-8">
+                <p class="text-white text-sm md:text-base font-medium uppercase tracking-wide mb-2 drop-shadow-md">
+                    Family Dental Care
+                </p>
+
+                <div class="flex items-center mb-6">
+                    <div class="h-10 md:h-12 w-[6px] bg-[#99D901] mr-4 rounded-sm"></div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+                        Latest <span class="text-white">News</span>
+                    </h1>
+                </div>
+
+                <div class="breadcrumb-box inline-block pr-12 pl-5 py-3 mt-2 shadow-lg">
+                    <p class="text-white text-sm font-semibold tracking-wide">
+                        <a href="#" class="hover:text-gray-200 transition">Home</a>
+                        <span class="mx-2 text-[#8bc34a]">»</span>
+                        Blog
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
-    <script>
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
-            // Toggle Icon
-            const icon = menuBtn.querySelector('i');
-            if (mobileMenu.classList.contains('open')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            } else {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            }
-        });
-
-        // Scroll Effect
-        const header = document.getElementById('main-header');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-md');
-                header.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
-                header.style.backdropFilter = "blur(10px)";
-            } else {
-                header.classList.remove('shadow-md');
-                header.style.backgroundColor = "rgba(255, 255, 255, 1)";
-                header.style.backdropFilter = "none";
-            }
-        });
-    </script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
