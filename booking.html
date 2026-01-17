@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oraliya Dental Clinic</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header" class="fixed w-full top-0 left-0 z-50 transition-all duration-300 bg-white">
+
+        <div class="lg:pl-24 flex h-[100px] relative">
+
+            <div
+                class="w-[200px] lg:pl-40 lg:w-[260px] h-full bg-white z-20 flex flex-col justify-center items-center absolute left-0 top-0  pr-6">
+                <div class="text-center">
+                    <img src="./assets/image/header/logo.png" class="w-20 lg:w-auto">
+                </div>
+            </div>
+
+            <div class="flex-1 flex flex-col ml-[200px] lg:ml-[260px]">
+
+                <div
+                    class="bg-gradient-to-r from-[#0465CB] to-[#349AFF] pr-40 text-white h-[45px] slant-left flex items-center justify-between px-8 lg:pl-12 hidden lg:flex relative z-10">
+                    <div></div>
+                    <div class="flex items-center space-x-6 text-[13px] font-medium opacity-90">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-phone"></i> (+91) 8574236995</span>
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-clock"></i> Mon-Fri (8am -
+                            6pm)</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                            info@example.com</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="bg-gradient-to-r from-[#99D901] to-[#528401] text-white text-[12px] font-bold uppercase px-5 py-2 rounded shadow-md transition">
+                            Appointment Now
+                        </a>
+                        <button class="text-white text-lg"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+
+                <nav id="navbar"
+                    class="h-[55px] lg:h-[55px] flex items-center justify-center px-4 lg:pl-8 lg:pr-4 bg-white">
+
+                    <ul class="hidden lg:flex space-x-6 text-gray-600 font-medium text-[14px]">
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Home</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">About</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Doctor</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Services</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Find a Clinic</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Membership</a></li>
+                        <li><a href="#" class="text-[#1e88e5] font-semibold">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Contact</a></li>
+                    </ul>
+
+                    <div class="lg:hidden flex items-center justify-end w-full">
+                        <button id="menu-btn" class="text-[#1e88e5] text-2xl focus:outline-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden bg-white border-t w-full shadow-lg">
+            <ul class="flex flex-col text-gray-700 font-medium">
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Home</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">About</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Services</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Doctors</a></li>
+                <li class="p-4 bg-gray-50">
+                    <button class="w-full bg-[#8bc34a] text-white py-3 rounded font-bold shadow">Book
+                        Appointment</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section
+        class="relative border-t-4 border-red-500 mt-24 w-full h-[250px] md:h-[300px] lg:h-[400px] flex items-center overflow-hidden">
+
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop"
+                alt="Dental Care" class="w-full h-full object-cover object-center" />
+
+            <div class="absolute inset-0 bg-blue-900/30"></div>
+        </div>
+
+        <div class="banner-left-shape hidden md:block"></div>
+
+        <div class="container mx-auto px-6 relative z-10 h-full flex flex-col justify-center">
+
+            <div class="max-w-lg ml-0 md:ml-12 mt-8">
+                <p class="text-white text-sm md:text-base font-medium uppercase tracking-wide mb-2 drop-shadow-md">
+                    Family Dental Care
+                </p>
+
+                <div class="flex items-center mb-6 w-fit">
+                    <div class="mr-4">
+                        <img src="./assets/image/header/Group 170.svg" alt="">
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+                        Book Your Online Appointment
+                    </h1>
+                </div>
+
+                <div class="breadcrumb-box inline-block pr-12 pl-5 py-3 mt-2 shadow-lg">
+                    <p class="text-white text-sm font-semibold tracking-wide">
+                        <a href="#" class="hover:text-gray-200 transition">Home</a>
+                        <span class="mx-2 text-[#8bc34a]">»</span>
+                        Appoinment
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <img src="./assets/image/header/Group 133.png" class="absolute top-1/2 left-0 hidden lg:block" alt="">
+        <img src="./assets/image/header/Group 132.png" class="absolute bottom-20 right-0 hidden lg:block" alt="">
+        <img src="./assets/image/header/Group11.png" class="absolute top-20 right-0 hidden lg:block" alt="">
+
+        <div class="container mx-auto px-4 py-12 relative z-10 max-w-6xl">
+
+            <div class="text-center mb-10">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                    <img src="./assets/image/header/Group 170.svg" class="h-10" alt="">
+                    <h3 class="text-[#1577DD] font-bold text-xl lg:text-2xl 2xl:text-3xl">Book Your Online Appointment
+                    </h3>
+                </div>
+                <p class="text-[#000000] text-base lg:text-xl ">A Wide Range Of Blogs For Your Best Smile
+                </p>
+            </div>
+
+            <div class="rounded-3xl p-6 md:p-10 lg:p-12" style="background-image: url('./assets/image/header/Rectangle 229.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;">
+
+                <div class="text-center mb-8">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-bold text-[#000000] max-w-xl mx-auto">Welcome
+                        to
+                        Oraliya,
+                        where
+                        your
+                        comfort and
+                        smile come
+                        first.</h2>
+                    <p class="text-[#000000] text-base mt-3 px-4 max-w-3xl mx-auto">Please fill out the form carefully
+                        to book
+                        your
+                        appointment. Our support team will contact you shortly for confirmation.</p>
+                </div>
+
+                <form action="#" class="bg-white shadow-sm p-4 rounded-md">
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-6 w-fit">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10 text-gray-600 text-lg">
+                                <img src="./assets/image/header/medical-records 1.png" class="w-6 h-6" alt="">
+                            </div>
+                            <div
+                                class="bg-[#0465CB] text-white py-2 pl-8 pr-6 rounded-r-full -ml-6 flex-1 shadow-sm font-semibold text-lg">
+                                Patient Information
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div class="md:col-span-1">
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
+                                <input type="text" placeholder="Enter Your Full Name"
+                                    class="w-full border border-gray-300 rounded-md p-3 text-sm input-field">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Age</label>
+                                <input type="number" placeholder="Age"
+                                    class="w-full border border-gray-300 rounded-md p-3 text-sm input-field">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Gender</label>
+                                <select
+                                    class="w-full border border-gray-300 rounded-md p-3 text-sm input-field bg-white">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+                                <input type="tel" placeholder="Enter your 10-digit mobile number"
+                                    class="w-full border border-gray-300 rounded-md p-3 text-sm input-field">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                                <input type="email" placeholder="Enter your email address"
+                                    class="w-full border border-gray-300 rounded-md p-3 text-sm input-field">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2">Address</label>
+                            <textarea rows="2" placeholder="Enter your complete address including city and ZIP code"
+                                class="w-full border border-gray-300 rounded-md p-3 text-sm input-field resize-none"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-6 w-fit">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10 text-gray-600 text-lg">
+                                <img src="./assets/image/header/office 1.png" class="w-6 h-6" alt="">
+                            </div>
+                            <div
+                                class="bg-[#0465CB] text-white py-2 pl-8 pr-6 rounded-r-full -ml-6 flex-1 shadow-sm font-semibold text-lg">
+                                Select Branch
+                            </div>
+                        </div>
+
+                        <select
+                            class="w-full border border-gray-300 rounded-md p-3 text-sm input-field bg-white text-gray-600">
+                            <option>Oraliya Dental Care - Main Branch (City Center)</option>
+                            <option>Oraliya Dental Care - South Branch</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-6 w-fit">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10 text-gray-600 text-lg">
+                                <img src="./assets/image/header/doctor (2) 1.png" class="w-6 h-6" alt="">
+                            </div>
+                            <div
+                                class="bg-[#0465CB] text-white py-2 pl-8 pr-6 rounded-r-full -ml-6 flex-1 shadow-sm font-semibold text-lg">
+                                Select Doctor
+                            </div>
+                        </div>
+
+                        <select
+                            class="w-full border border-gray-300 rounded-md p-3 text-sm input-field bg-white text-gray-600">
+                            <option>Please Choose Your Preferred Dentist For Consultation</option>
+                            <option>Dr. Smith (Orthodontist)</option>
+                            <option>Dr. Doe (Surgeon)</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-6 w-fit">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10 text-gray-600 text-lg">
+                                <img src="./assets/image/header/Group 163.png" class="w-6 h-6" alt="">
+                            </div>
+                            <div
+                                class="bg-[#0465CB] text-white py-2 pl-8 pr-6 rounded-r-full -ml-6 flex-1 shadow-sm font-semibold text-lg">
+                                Appointment Preferences
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Preferred Date</label>
+                                <input type="date"
+                                    class="w-full border border-gray-300 rounded-md p-3 text-sm input-field text-gray-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2">Preferred Time Slot:</label>
+                                <select
+                                    class="w-full border border-gray-300 rounded-md p-3 text-sm input-field bg-white text-gray-600">
+                                    <option>Select your appointment Time</option>
+                                    <option>Morning (10:00 AM - 01:00 PM)</option>
+                                    <option>Evening (04:00 PM - 08:00 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-6 w-fit">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10 text-gray-600 text-lg">
+                                <img src="./assets/image/header/first-aid 1.png" class="w-6 h-6" alt="">
+
+                            </div>
+                            <div
+                                class="bg-[#0465CB] text-white py-2 pl-8 pr-6 rounded-r-full -ml-6 flex-1 shadow-sm font-semibold text-lg">
+                                Treatment Type
+                            </div>
+                        </div>
+
+                        <select
+                            class="w-full border border-gray-300 rounded-md p-3 text-sm input-field bg-white text-gray-600">
+                            <option>Dental Cleaning</option>
+                            <option>Root Canal</option>
+                            <option>Teeth Whitening</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-6 w-fit">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10 text-gray-600 text-lg">
+                                <img src="./assets/image/header/image 30.png" class="w-6 h-6" alt="">
+                            </div>
+                            <div
+                                class="bg-[#0465CB] text-white py-2 pl-8 pr-6 rounded-r-full -ml-6 flex-1 shadow-sm font-semibold text-lg">
+                                Additional Message
+                            </div>
+                        </div>
+
+                        <textarea rows="3"
+                            placeholder="Describe your concern, pain area, or any special note for the doctor"
+                            class="w-full border border-gray-300 rounded-md p-3 text-sm input-field resize-none"></textarea>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-6 w-fit">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center z-10 text-gray-600 text-lg">
+                                <img src="./assets/image/header/image 31.png" class="w-6 h-6" alt="">
+                            </div>
+                            <div
+                                class="bg-[#0465CB] text-white py-2 pl-8 pr-6 rounded-r-full -ml-6 flex-1 shadow-sm font-semibold text-lg">
+                                Consent & Confirmation
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 text-sm text-gray-600 cursor-pointer">
+                                <input type="checkbox"
+                                    class="mt-1 w-4 h-4 text-[#1e88e5] cursor-pointer border-gray-300 rounded focus:ring-[#1e88e5]">
+                                <span>I confirm that the above details are correct.</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-sm text-gray-600 cursor-pointer">
+                                <input type="checkbox"
+                                    class="mt-1 w-4 h-4 text-[#1e88e5] cursor-pointer border-gray-300 rounded focus:ring-[#1e88e5]">
+                                <span>I allow Oraliya Dental Care to contact me via phone or email for appointment
+                                    confirmation.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button type="submit"
+                            class="bg-gradient-to-r from-[#99D901] to-[#528401] text-white font-bold py-3 px-8 rounded shadow-lg transition-all transform hover:scale-105 uppercase text-xs tracking-wider flex items-center gap-2">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
