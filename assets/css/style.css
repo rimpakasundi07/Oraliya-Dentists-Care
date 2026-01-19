@@ -28,3 +28,54 @@
   max-height: 400px;
   opacity: 1;
 }
+
+/* blog */
+/* 2. Blue Breadcrumb Box (নিচের নীল বক্স যার ডান দিক বাঁকা) */
+.breadcrumb-box {
+  background-color: #0465CB;
+  /* Dark Blue */
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* 2. Top Left Tag Slant */
+.tag-clip {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+/* 3. Bottom Right Date Slant */
+.date-clip {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* 4. Background Decorative Hexagons (Optional) */
+.bg-hex {
+  position: absolute;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.blue-wave-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #1e88e5;
+  /* Blue Color */
+  z-index: 0;
+  /* একটি কমপ্লেক্স ওয়েভ শেপ তৈরি করা হচ্ছে */
+  clip-path: path("M100,0 V100 H20 C-50,70 80,60 50,0 Z");
+  /* Note: Clip-path এর ভ্যালু ব্রাউজার ভেদে বা স্ক্রিন সাইজে একটু এদিক ওদিক হতে পারে, তাই আমি নিচে একটি SVG ব্যাকগ্রাউন্ড এপ্রোচ ব্যবহার করছি যা বেশি রেসপন্সিভ */
+}
+
+/* কাস্টম ইনপুট ফোকাস */
+.form-input:focus {
+  outline: none;
+  border-color: #8bc34a;
+  box-shadow: 0 0 0 3px rgba(139, 195, 74, 0.2);
+}
