@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oraliya Dental Clinic</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header" class="fixed w-full top-0 left-0 z-50 transition-all duration-300 bg-white">
+
+        <div class="lg:pl-24 flex h-[100px] relative">
+
+            <div
+                class="w-[200px] lg:pl-40 lg:w-[260px] h-full bg-white z-20 flex flex-col justify-center items-center absolute left-0 top-0  pr-6">
+                <div class="text-center">
+                    <img src="./assets/image/header/logo.png" class="w-20 lg:w-auto">
+                </div>
+            </div>
+
+            <div class="flex-1 flex flex-col ml-[200px] lg:ml-[260px]">
+
+                <div
+                    class="bg-gradient-to-r from-[#0465CB] to-[#349AFF] pr-40 text-white h-[45px] slant-left flex items-center justify-between px-8 lg:pl-12 hidden lg:flex relative z-10">
+                    <div></div>
+                    <div class="flex items-center space-x-6 text-[13px] font-medium opacity-90">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-phone"></i> (+91) 8574236995</span>
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-clock"></i> Mon-Fri (8am -
+                            6pm)</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                            info@example.com</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="bg-gradient-to-r from-[#99D901] to-[#528401] text-white text-[12px] font-bold uppercase px-5 py-2 rounded shadow-md transition">
+                            Appointment Now
+                        </a>
+                        <button class="text-white text-lg"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+
+                <nav id="navbar"
+                    class="h-[55px] lg:h-[55px] flex items-center justify-center px-4 lg:pl-8 lg:pr-4 bg-white">
+
+                    <ul class="hidden lg:flex space-x-6 text-gray-600 font-medium text-[14px]">
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Home</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">About</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Doctor</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Services</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Find a Clinic</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Membership</a></li>
+                        <li><a href="#" class="text-[#1e88e5] font-semibold">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Contact</a></li>
+                    </ul>
+
+                    <div class="lg:hidden flex items-center justify-end w-full">
+                        <button id="menu-btn" class="text-[#1e88e5] text-2xl focus:outline-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden bg-white border-t w-full shadow-lg">
+            <ul class="flex flex-col text-gray-700 font-medium">
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Home</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">About</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Services</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Doctors</a></li>
+                <li class="p-4 bg-gray-50">
+                    <button class="w-full bg-[#99D902] text-white py-3 rounded font-bold shadow">Book
+                        Appointment</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section
+        class="relative border-t-4 border-red-500 mt-24 w-full h-[250px] md:h-[300px] lg:h-[400px] flex items-center overflow-hidden">
+
+        <div class="absolute inset-0 z-0">
+            <img src="./assets/image/header/Rectangle 8 (1).webp" alt="Dental Care" class="w-full h-full" />
+
+            <div class="absolute inset-0 bg-blue-900/30"></div>
+        </div>
+
+        <div class="banner-left-shape hidden md:block"></div>
+
+        <div class="container mx-auto px-6 relative z-10 h-full flex flex-col justify-center">
+
+            <div class="max-w-lg ml-0 md:ml-12 mt-8">
+                <p class="text-white text-sm md:text-base font-medium uppercase tracking-wide mb-2 drop-shadow-md">
+                    Family Dental Care
+                </p>
+
+                <div class="flex items-center mb-6 w-fit">
+                    <div class="mr-4">
+                        <img src="./assets/image/header/Group 170.svg" alt="">
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+                        Founder Message
+                    </h1>
+                </div>
+
+                <div class="breadcrumb-box inline-block pr-12 pl-5 py-3 mt-2 shadow-lg">
+                    <p class="text-white text-sm font-semibold tracking-wide">
+                        <a href="#" class="hover:text-gray-200 transition">Home</a>
+                        <span class="mx-2 text-[#99D902]">»</span>
+                        Founder Message
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#E5F2FF] relative py-14">
+        <img src="./assets/image/header/Group 199.png" class="absolute right-0 top-10 hidden lg:block" alt="">
+        <img src="./assets/image/header/Group 200.png" class="absolute left-0 top-10 hidden lg:block" alt="">
+        <img src="./assets/image/header/Group 201.png" class="absolute bottom-10 left-0 hidden lg:block" alt="">
+
+        <div class="container mx-auto px-4 2xl:px-0">
+            <div class="space-y-4 flex flex-col justify-center items-center">
+                <div class="flex items-center">
+                    <div class="mr-2">
+                        <img src="./assets/image/header/Group 170.svg" alt="">
+                    </div>
+                    <h1 class="font-bold text-[#000000] text-2xl lg:text-3xl 2xl:text-4xl">Our Founder’s Message</h1>
+                </div>
+                <p class="text-[#000000] text-xl lg:text-2xl">Because Every Smile Deserves the Best Care</p>
+            </div>
+
+            <!-- content -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 items-center">
+                <div>
+                    <img src="./assets/image/header/Rectangle 314.png" class="mx-auto" alt="">
+                </div>
+
+                <div class="text-[#000000] space-y-4">
+                    <h1 class="text-2xl lg:text-3xl 2xl:text-5xl font-bold">Dr. Sharuk Ahamed, Founder of
+                        <span class="text-[#8FCA03]">ORALIYA</span>
+                    </h1>
+                    <p class="text-xl">Dentistry is not just about treating teeth — it’s about restoring confidence,
+                        comfort, and happiness in every smile</p>
+
+                    <hr class="border border-[#0465CB]">
+
+                    <div class="text-lg lg:text-xl space-y-3">
+                        <p>At ORALIYA, our vision has always been to redefine dental care — to make it accessible,
+                            painless, and personal</p>
+                        <p>When I founded ORALIYA, my goal was clear: to build a place where people feel cared for, not
+                            just treated</p>
+                        <p> A clinic that feels less like a hospital and more like a space of healing, trust, and
+                            transformation</p>
+                        <p>Every smile we create carries our brand’s promise —</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-[#E5F2FF] relative">
+        <img src="./assets/image/header/booo.png" class="absolute -top-16 right-0 hidden lg:block" alt="">
+        <img src="./assets/image/header/Vector (3).png"
+            class="absolute bottom-0 right-0 hidden md:block w-[200px] lg:w-auto" alt="">
+        <img src="./assets/image/header/Group 133.png" class="absolute bottom-0 w-[200px] left-0 hidden lg:block"
+            alt="">
+        <div class="container px-4 2xl:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-7">
+            <div class="space-y-5">
+                <h1 class="font-bold text-[#000000] text-2xl lg:text-3xl 2xl:text-4xl">Compassion in care, precision in
+                    practice, and honesty in <span class="text-[#0465CB] ">every
+                        treatment.</span>
+                </h1>
+                <p class="text-lg lg:text-xl">Through advanced dental technology, a highly skilled team, and genuine
+                    patient relationships, we’re
+                    shaping the future of dental care — one confident smile at a time.</p>
+                <p class="text-lg lg:text-xl">I truly believe that the best reward a dentist can receive is a patient’s
+                    smile of satisfaction.</p>
+                <p class="text-lg lg:text-xl"> That belief is the heartbeat of ORALIYA — and it continues to inspire
+                    every member of our family to
+                    serve with excellence and empathy.</p>
+            </div>
+
+            <div>
+                <img src="./assets/image/header/XMLID_18_.png" class="ml-auto" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="relative text-white pt-16 pb-8 overflow-hidden"
+        style="background-image: url('./assets/image/header/Group 168.svg'); background-size: cover; background-position: center;">
+
+        <div class="absolute inset-0 bg-[#034284] opacity-85 z-0"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+                <div>
+                    <div class=" mb-6">
+                        <img src="./assets/image/header/Group 120.png" alt="">
+                    </div>
+
+                    <p class="text-sm leading-7 text-white">
+                        Most people visit the dentist only when they have pain — but regular check-ups can help detect
+                        problems early. Early treatment saves time, money, and keeps your smile bright!
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <div class="bg-[#94D301] w-8 h-8 flex items-center justify-center rounded-full">
+                            <img src="./assets/image/header/Group 97.png" class="w-6 h-6" alt="">
+                        </div> Useful Links
+                    </h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Home</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> About</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Doctor</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Services</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Find a Clinic</a>
+                        </li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Blog</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <div class="bg-[#94D301] w-8 h-8 flex items-center justify-center rounded-full">
+                            <img src="./assets/image/header/Group 97.png" class="w-6 h-6" alt="">
+                        </div> Information
+                    </h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> History</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Career</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Patients Rights</a>
+                        </li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Privacy Policy</a>
+                        </li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Terms Of use</a>
+                        </li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <div class="bg-[#94D301] w-8 h-8 flex items-center justify-center rounded-full">
+                            <img src="./assets/image/header/Group 97.png" class="w-6 h-6" alt="">
+                        </div> Social
+                    </h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Instagram</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Twitter</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-[#8bc34a] transition flex items-center gap-2"><i
+                                    class="fa-solid fa-arrow-right text-[10px] text-[#8bc34a]"></i> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-[#FFFFFF] mb-8"></div>
+
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-8">
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-10 w-full lg:w-auto">
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-phone text-[#002b49] text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white">Have a Questions?</p>
+                            <p class="text-white font-medium">(+91) 54869569</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0">
+                            <i class="fa-regular fa-envelope text-[#002b49] text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white">Contact Us At</p>
+                            <p class="text-white font-medium">infodental@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-globe text-[#002b49] text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white">Contact Us At</p>
+                            <p class="text-white font-medium">www.oraliva.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <p class="text-xs text-white mb-1">Payment Gateway</p>
+                    <div class="">
+                        <img src="./assets/image/header/pay.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-[#FFFFFF] pt-6 text-center">
+                <p class="text-sm text-white">
+                    &copy; 2025 Oraliya. All Rights Reserved. Design & Developed by <a href="https://insucreation.in"
+                        target="_blank" class="hover:underline">Insu Creation
+                        Pvt. Ltd.</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

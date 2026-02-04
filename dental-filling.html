@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oraliya Dental Clinic</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header" class="fixed w-full top-0 left-0 z-50 transition-all duration-300 bg-white">
+
+        <div class="lg:pl-24 flex h-[100px] relative">
+
+            <div
+                class="w-[200px] lg:pl-40 lg:w-[260px] h-full bg-white z-20 flex flex-col justify-center items-center absolute left-0 top-0  pr-6">
+                <div class="text-center">
+                    <img src="./assets/image/header/logo.png" class="w-20 lg:w-auto">
+                </div>
+            </div>
+
+            <div class="flex-1 flex flex-col ml-[200px] lg:ml-[260px]">
+
+                <div
+                    class="bg-gradient-to-r from-[#0465CB] to-[#349AFF] pr-40 text-white h-[45px] slant-left flex items-center justify-between px-8 lg:pl-12 hidden lg:flex relative z-10">
+                    <div></div>
+                    <div class="flex items-center space-x-6 text-[13px] font-medium opacity-90">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-phone"></i> (+91) 8574236995</span>
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-clock"></i> Mon-Fri (8am -
+                            6pm)</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                            info@example.com</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="bg-gradient-to-r from-[#99D901] to-[#528401] text-white text-[12px] font-bold uppercase px-5 py-2 rounded shadow-md transition">
+                            Appointment Now
+                        </a>
+                        <button class="text-white text-lg"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+
+                <nav id="navbar"
+                    class="h-[55px] lg:h-[55px] flex items-center justify-center px-4 lg:pl-8 lg:pr-4 bg-white">
+
+                    <ul class="hidden lg:flex space-x-6 text-gray-600 font-medium text-[14px]">
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Home</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">About</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Doctor</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Services</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Find a Clinic</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Membership</a></li>
+                        <li><a href="#" class="text-[#1e88e5] font-semibold">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#1e88e5] transition">Contact</a></li>
+                    </ul>
+
+                    <div class="lg:hidden flex items-center justify-end w-full">
+                        <button id="menu-btn" class="text-[#1e88e5] text-2xl focus:outline-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden bg-white border-t w-full shadow-lg">
+            <ul class="flex flex-col text-[##000000] font-medium">
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Home</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">About</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Services</a></li>
+                <li><a href="#" class="block px-6 py-3 border-b hover:bg-gray-50 hover:text-[#1e88e5]">Doctors</a></li>
+                <li class="p-4 bg-gray-50">
+                    <button class="w-full bg-[#99D902] text-white py-3 rounded font-bold shadow">Book
+                        Appointment</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section
+        class="relative border-t-4 border-red-500 mt-24 w-full h-[250px] md:h-[300px] lg:h-[400px] flex items-center overflow-hidden">
+
+        <div class="absolute inset-0 z-0">
+            <img src="./assets/image/header/Rectangle 8 (1).webp" alt="Dental Care" class="w-full h-full" />
+
+            <div class="absolute inset-0 bg-blue-900/30"></div>
+        </div>
+
+        <div class="banner-left-shape hidden md:block"></div>
+
+        <div class="container mx-auto px-6 relative z-10 h-full flex flex-col justify-center">
+
+            <div class="max-w-lg ml-0 md:ml-12 mt-8">
+                <p class="text-white text-sm md:text-base font-medium uppercase tracking-wide mb-2 drop-shadow-md">
+                    Family Dental Care
+                </p>
+
+                <div class="flex items-center mb-6 w-fit">
+                    <div class="mr-4">
+                        <img src="./assets/image/header/Group 170.svg" alt="">
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+                        Dental Filling at ORALIYA
+                    </h1>
+                </div>
+
+                <div class="breadcrumb-box inline-block pr-12 pl-5 py-3 mt-2 shadow-lg">
+                    <p class="text-white text-sm font-semibold tracking-wide">
+                        <a href="#" class="hover:text-gray-200 transition">Home</a>
+                        <span class="mx-2 text-[#99D902]">»</span>
+                        Dental Filling
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Equipment & Infection Control at ORALIYA -->
+    <section class="py-10 relative">
+        <img src="./assets/image/filling/Vector (2).webp" class="absolute bottom-24 hidden lg:block right-0 z-0" alt="">
+        <img src="./assets/image/filling/Group 173.png"
+            class="absolute top-0 hidden lg:block w-[200px] 2xl:w-[230px] left-0 z-0" alt="">
+        <div class="container mx-auto px-4 2xl:px-0">
+
+            <div class="space-y-4 flex flex-col justify-center items-center">
+                <div class="flex items-center">
+                    <div class="mr-2">
+                        <img src="./assets/image/header/Group 170.svg" alt="">
+                    </div>
+                    <h1 class="font-bold text-[#000000] text-2xl lg:text-3xl 2xl:text-4xl">Safety Equipment & Infection
+
+                        Control at ORALIYA</h1>
+                </div>
+                <p class="text-[#000000] text-xl lg:text-2xl">Restore Your Tooth. Relieve Pain. Reclaim Your Smile.</p>
+            </div>
+
+            <div class="container mx-auto mt-16">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+
+                    <div class="lg:w-1/2">
+
+                        <div class="flex items-start">
+                            <div class="mr-2">
+                                <img src="./assets/image/header/Group 170.svg" class="h-8" alt="">
+                            </div>
+                            <h3 class="text-3xl font-bold text-[#1577DD] mb-6 flex items-center">
+                                What is a Dental Filling?
+                            </h3>
+                        </div>
+
+                        <p class="text-gray-600 leading-relaxed text-lg mb-8">
+                            A Dental Filling, also known as a Tooth Filling or Cavity Filling,
+                            is a restorative dental treatment used to repair teeth damaged
+                            due to tooth decay, cavities, fractures, or wear. <br><br>
+                            At ORALIYA, dental fillings are performed using advanced
+                            restorative materials that not only repair the tooth but also
+                            restore its strength, shape, and natural appearance.
+                        </p>
+
+                        <h4 class="text-2xl font-bold text-gray-800 mb-6">Dental fillings help</h4>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 bg-[#1577DD] shrink-0 rounded-full flex items-center justify-center text-white">
+                                    <img src="./assets/image/filling/Group 254.png" alt="">
+                                </div>
+                                <span class="text-lg font-medium text-[##000000]">Stop further decay</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 bg-[#1577DD] rounded-full flex items-center justify-center text-white">
+                                    <img src="./assets/image/filling/Group 255.png" alt="">
+                                </div>
+                                <span class="text-lg font-medium text-[##000000]">Protect the inner tooth
+                                    structure</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 bg-[#1577DD] rounded-full flex items-center justify-center text-white">
+                                    <img src="./assets/image/filling/Group 256.png" alt="">
+                                </div>
+                                <span class="text-lg font-medium text-[##000000]">Improve chewing and biting
+                                    function</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 bg-[#1577DD] rounded-full flex items-center justify-center text-white">
+                                    <img src="./assets/image/filling/Group 257.png" alt="">
+                                </div>
+                                <span class="text-lg font-medium text-[##000000]">Maintain natural tooth
+                                    integrity</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:w-1/2 relative flex justify-center">
+
+                        <div class="relative ml-auto overflow-hidden w-[350px] h-[350px] md:w-[500px] md:h-[500px]">
+                            <img src="./assets/image/filling/df (1).webp" alt="Dental Procedure" class="w-full h-full">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Do Teeth Need Dental Fillings? -->
+
+    <section class="py-10 relative">
+        <img src="./assets/image/filling/Group 258.png" class="absolute top-0 right-0 hidden lg:block" alt="">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+
+            <div class="w-full lg:w-1/2 flex flex-col items-center">
+                <div class="relative mb-10">
+                    <div class="absolute -left-10 top-5 w-64 h-64 bg-[#1577DD] rounded-full opacity-90 -z-10 hidden md:block"
+                        style="clip-path: ellipse(45% 50% at 50% 50%); transform: rotate(-10deg);"></div>
+
+                    <div class="relative z-10 w-[300px] h-[350px] md:w-[450px] md:h-[500px]">
+                        <img src="./assets/image/home/XMLID_17_.png" alt="Dental Treatment"
+                            class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-xl bg-white rounded-md p-6 border-l-[5px] border-l-[#99D902] shadow-[0_4px_17px_0_rgba(50,152,253,0.19)] rounded-r-lg">
+                    <p class="text-[##000000] text-base md:text-lg">
+                        A dental filling seals the damaged area and prevents bacteria from spreading deeper into the
+                        tooth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 relative">
+                <div class="absolute -top-10 right-0 opacity-40 -z-10">
+                    <div class="flex gap-2">
+                        <div class="w-16 h-16 bg-green-300 transform rotate-12 rounded-lg"></div>
+                        <div class="w-12 h-12 border-4 border-blue-400 transform -rotate-12 rounded-lg"></div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <div class="flex items-start">
+                        <div class="mr-2">
+                            <img src="./assets/image/header/Group 170.svg" class="h-8" alt="">
+                        </div>
+                        <h3 class="text-3xl font-bold text-[#1577DD] mb-6 flex items-center">
+                            Why Do Teeth Need Dental Fillings?
+                        </h3>
+                    </div>
+                    <p class="mt-4 text-[#000000] text-lg">Tooth structure can get damaged due to</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 group">
+                        <div
+                            class="w-12 h-12 bg-[#1577DD] rounded-full flex items-center justify-center text-white text-xl shadow-md transition-transform group-hover:scale-110">
+                            <img src="./assets/image/filling/Group 260.png" alt="">
+                        </div>
+                        <span class="text-xl font-medium text-[##000000]">Tooth decay (cavities)</span>
+                    </div>
+
+                    <div class="flex items-center gap-4 group">
+                        <div
+                            class="w-12 h-12 bg-[#1577DD] rounded-full flex items-center justify-center text-white text-xl shadow-md transition-transform group-hover:scale-110">
+                            <img src="./assets/image/filling/Group 261.png" alt="">
+                        </div>
+                        <span class="text-xl font-medium text-[##000000]">Dental trauma or accidents</span>
+                    </div>
+
+                    <div class="flex items-center gap-4 group">
+                        <div
+                            class="w-12 h-12 bg-[#1577DD] rounded-full flex items-center justify-center text-white text-xl shadow-md transition-transform group-hover:scale-110">
+                            <img src="./assets/image/filling/Group 262.png" alt="">
+                        </div>
+                        <span class="text-xl font-medium text-[##000000]">Teeth grinding (bruxism)</span>
+                    </div>
+
+                    <div class="flex items-center gap-4 group">
+                        <div
+                            class="w-12 h-12 bg-[#1577DD] rounded-full flex items-center justify-center text-white text-xl shadow-md transition-transform group-hover:scale-110">
+                            <img src="./assets/image/filling/Group 263.png" alt="">
+                        </div>
+                        <span class="text-xl font-medium text-[##000000]">Nail biting</span>
+                    </div>
+
+                    <div class="flex items-center gap-4 group">
+                        <div
+                            class="w-12 h-12 bg-[#1577DD] rounded-full flex items-center justify-center text-white text-xl shadow-md transition-transform group-hover:scale-110">
+                            <img src="./assets/image/filling/Group 264.png" alt="">
+                        </div>
+                        <span class="text-xl font-medium text-[##000000]">Chipped or cracked teeth</span>
+                    </div>
+
+                    <div class="flex items-center gap-4 group">
+                        <div
+                            class="w-12 h-12 bg-[#1577DD] rounded-full flex items-center justify-center text-white text-xl shadow-md transition-transform group-hover:scale-110">
+                            <img src="./assets/image/filling/Group 265.png" alt="">
+                        </div>
+                        <span class="text-xl font-medium text-[##000000]">Old or broken fillings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Dental Fillings at ORALIYA -->
+    <section class="bg-white py-20 px-6">
+        <div class="text-center mb-16 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800"><span class="text-[#99D902]">|</span> Types of Dental Fillings
+                at ORALIYA</h2>
+            <p class="mt-4 text-gray-600 font-semibold">Dental fillings are selected based on cavity size, location,
+                aesthetics, durability needs, and patient preference.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="flex flex-col relative">
+                <div class="h-[350px] border-[14px] border-[#99D902] rounded-tl-[100px] relative">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80"
+                        class="w-full h-full rounded-tl-[100px] object-cover">
+                    <div
+                        class="absolute -top-4 -left-4 bg-white w-24 h-24 rounded-full border-[2px] border-[#99D902] flex justify-center items-center shadow-[0_4px_54px_0_rgba(21,119,221,0.22)]">
+                        <img src="./assets/image/filling/Group 277.png" class="w-14 h-14" alt="">
+                    </div>
+                </div>
+                <div
+                    class="p-4 lg:p-8 mx-6 rounded-2xl -mt-10 relative z-20 bg-white border-[2px] border-[#99D902] shadow-[0_4px_74px_0_rgba(0,0,0,0.25)] flex-grow">
+                    <h3 class="text-2xl font-bold text-[#000000]">Composite Fillings (Tooth-Coloured Fillings)</h3>
+                    <div class="h-1 w-12 bg-[#99D902] my-4"></div>
+                    <p class="text-gray-600 text-sm mb-4">Composite fillings are the most preferred and recommended
+                        dental fillings at ORALIYA.</p>
+
+                    <div class="flex flex-col gap-2 mb-6">
+                        <span class="bg-[#1577DD] text-white px-3 py-1 rounded-full text-xs self-start">Material: Resin
+                            +
+                            Plastic</span>
+                        <span class="bg-[#1577DD] text-white px-3 py-1 rounded-full text-xs self-start">Appearance:
+                            Matches natural tooth color</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <div>
+                            <p class="font-bold text-sm mb-2">Benefits</p>
+                            <ul class="text-[12px] space-y-1 text-gray-600">
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Natural-looking & aesthetic
+                                </li>
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Bonds strongly with tooth
+                                </li>
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Preserves more structure
+                                </li>
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Suitable for front & back
+                                    teeth
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm mb-2">Also used for</p>
+                            <ul class="text-[12px] space-y-1 text-gray-600">
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Broken teeth repair</li>
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Chipped teeth</li>
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Veneers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rounded-3xl overflow-hidden border-2 border-[#99D902] shadow-xl flex flex-col">
+                <div class="h-64 relative">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80"
+                        class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-white p-2 rounded-full border-2 border-blue-500 shadow-md">
+                        <i class="fas fa-vial text-blue-500 text-xl"></i>
+                    </div>
+                </div>
+                <div class="p-8 bg-white flex-grow">
+                    <h3 class="text-2xl font-bold text-gray-800">Silver Amalgam Fillings</h3>
+                    <div class="h-1 w-12 bg-[#99D902] my-4"></div>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <p class="font-bold text-sm mb-2">Contains:</p>
+                            <ul class="text-[10px] space-y-1 text-gray-600">
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Silver</li>
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Tin</li>
+                                <li><i class="fas fa-check-circle text-[#99D902] mr-1"></i> Zinc</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm mb-2">Less common due to:</p>
+                            <ul class="text-[10px] space-y-1 text-gray-600">
+                                <li><i class="fas fa-times-circle text-red-400 mr-1"></i> Metallic appearance</li>
+                                <li><i class="fas fa-times-circle text-red-400 mr-1"></i> Mercury concerns</li>
+                                <li><i class="fas fa-times-circle text-red-400 mr-1"></i> Metal allergies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-[11px] text-gray-500 italic">At ORALIYA, we usually recommend safer and more
+                        aesthetic alternatives.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
