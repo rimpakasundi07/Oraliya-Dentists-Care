@@ -15,6 +15,29 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
+        /* Smooth transition for accordion content */
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .accordion-content.active {
+            max-height: 200px;
+            /* Adjust based on content size */
+            opacity: 1;
+        }
+
+        /* Icon rotation */
+        .icon {
+            transition: transform 0.3s ease;
+        }
+
+        .icon.rotate {
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 
@@ -1140,7 +1163,120 @@
             </div>
         </div>
     </section>
+
+    <!-- Frequently Asked Questions
+(FAQs) -->
+
+    <section class="flex items-center py-10 justify-center">
+        <div class="max-w-3xl w-full">
+
+            <div class="flex items-center justify-center mb-10">
+
+                <h2 class="text-2xl md:text-3xl font-bold text-black text-center">
+                    Frequently Asked Questions <br class="hidden sm:block"> (FAQs)
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+
+                <div class="accordion-item">
+                    <button onclick="toggleAccordion(1)"
+                        class="w-full bg-[#1577DD] hover:bg-blue-700 text-white font-semibold text-lg py-4 px-6 rounded-lg flex justify-between items-center shadow-md transition-colors">
+                        <span>Is dental filling painful?</span>
+                        <svg id="icon-1" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon rotate" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-1" class="accordion-content active mt-2">
+                        <div
+                            class="bg-white border border-[#99D902] rounded-lg p-6 text-gray-800 text-lg shadow-[0_4px_54px_0_rgba(21,119,221,0.15)]">
+                            Dental fillings at ORALIYA are performed under local anesthesia and are painless.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button onclick="toggleAccordion(2)"
+                        class="w-full bg-[#1577DD] hover:bg-blue-700 text-white font-semibold text-lg py-4 px-6 rounded-lg flex justify-between items-center shadow-md transition-colors">
+                        <span>Can a dental filling fall out?</span>
+                        <svg id="icon-2" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-2" class="accordion-content mt-2">
+                        <div
+                            class="bg-white border border-[#99D902] rounded-lg p-6 text-gray-800 text-lg shadow-[0_4px_54px_0_rgba(21,119,221,0.15)]">
+                            Yes, sometimes fillings can fall out if there is new decay or if you bite down on something
+                            very hard, but
+                            it can easily be fixed.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button onclick="toggleAccordion(3)"
+                        class="w-full bg-[#1577DD] hover:bg-blue-700 text-white font-semibold text-lg py-4 px-6 rounded-lg flex justify-between items-center shadow-md transition-colors">
+                        <span>What if my filling feels high?</span>
+                        <svg id="icon-3" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-3" class="accordion-content mt-2">
+                        <div
+                            class="bg-white border border-[#99D902] rounded-lg p-6 text-gray-800 text-lg shadow-[0_4px_54px_0_rgba(21,119,221,0.15)]">
+                            If a filling feels high, you should visit your dentist immediately for a minor adjustment to
+                            prevent jaw
+                            pain.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button onclick="toggleAccordion(4)"
+                        class="w-full bg-[#1577DD] hover:bg-blue-700 text-white font-semibold text-lg py-4 px-6 rounded-lg flex justify-between items-center shadow-md transition-colors">
+                        <span>Can old fillings be replaced?</span>
+                        <svg id="icon-4" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="content-4" class="accordion-content mt-2">
+                        <div
+                            class="bg-white border border-[#99D902] rounded-lg p-6 text-gray-800 text-lg shadow-[0_4px_54px_0_rgba(21,119,221,0.15)]">
+                            Yes, old fillings that are worn out, cracked, or decayed can be replaced with new, durable
+                            materials.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <script src="./assets/js/script.js"></script>
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+
+            // Check if it's currently open
+            const isOpen = content.classList.contains('active');
+
+            // Close all first (Optional: remove this block if you want multiple open at once)
+            document.querySelectorAll('.accordion-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.icon').forEach(el => el.classList.remove('rotate'));
+
+            // Toggle current
+            if (!isOpen) {
+                content.classList.add('active');
+                icon.classList.add('rotate');
+            }
+        }
+    </script>
 </body>
 
 </html>
